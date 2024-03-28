@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+	display: flex;
+	margin: 40px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.person {
+	min-width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	margin-right: 30px;
+	border: 4px solid #D2C8C9;
+	position: relative;
+}
+
+.person1 {
+	background: url(img2.jpg) 50% 50% no-repeat;
+}
+
+.person a {	
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+.person a:hover {	
+	cursor: pointer;
+}
+ 
+.vk  {
+    border-radius: 100%;
+	top: 0px;
+	left: 14px;
+	background: url(img1.jpg) 50%/100% no-repeat;
+}
+
+.vk:hover  {
+	background: url(https://image.flaticon.com/icons/svg/145/145813.svg) 50%/100% no-repeat;
+}
+
+.twitter {
+    border-radius: 100%;
+	top: 27px;
+	left: -6px;
+	background: url(img2.jpg) 50%/100% no-repeat;
+}
+
+.facebook {
+    border-radius: 100%;
+	top: 59px;
+	left: -17px;
+	background: url(img3.jpg) 50%/100% no-repeat;
+}
+
+.facebook:hover  {
+	background: url(https://image.flaticon.com/icons/svg/145/145802.svg) 50%/100% no-repeat;
+}
+
+.email {
+    border-radius: 100%;
+	top: 144px;
+	left: 63px;
+	background: url(img4.jpg) 50%/100% no-repeat;
+}
+
+.email:hover  {
+	background: url(https://lms.bspu.ru/pluginfile.php/27/mod_forum/post/384/E-Mail-PNG-Free-Download.png) 50%/100% no-repeat;
+}
+
+.email:hover:after {
+	content: attr(data-title); 
+	position: absolute;
+	top: 35px;
+	width: 65px;
+	z-index: 1;
+	padding: 3px 6px;
+	color: #000000;
+	font-size: 0.5em;
+	background: linear-gradient(to bottom, #FFFFFF, #E6E6EE);
+	border: 1px solid #000000;
+	border-radius: 3px;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="person1 person">
+          <a href="#" class="vk"></a>
+          <a href="#" class="twitter"></a>
+          <a href="#" class="facebook"></a>
+          <a href="#" class="email" data-title="Написать письмо"></a>
+        </div>
+</body>
+</html>
